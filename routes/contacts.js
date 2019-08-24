@@ -8,7 +8,7 @@ const ContactController = require('../controllers/ContactController')
 // @access Public
 router
   .route('/')
-  .get(ContactController.getUsers)
+  .get(ContactController.getContacts)
 
   // @route GET api/contacts
   // @desc Add new contact
