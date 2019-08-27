@@ -3,7 +3,8 @@ const mongoose = require('mongoose')
 const ContactSchema = mongoose.Schema({
   owner: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'users'
+    ref: 'users',
+    required: true
   },
   firstName: {
     type: String,
@@ -16,7 +17,7 @@ const ContactSchema = mongoose.Schema({
   },
   email: {
     type: String,
-    required: true
+    required: false
   },
   phoneNo: {
     type: String,
