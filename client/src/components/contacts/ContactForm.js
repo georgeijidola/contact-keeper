@@ -20,6 +20,7 @@ const ContactForm = () => {
     } else {
       setContact(initialState)
     }
+    // eslint-disable-next-line
   }, [contactContext, current])
 
   const [contact, setContact] = useState(initialState)
