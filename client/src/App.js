@@ -37,11 +37,11 @@ const App = () => {
   return (
     <AuthState>
       <ContactState>
-        <AlertState>
-          <Router>
-            <Fragment>
-              <Navbar />
-              <div className='container'>
+        <Router>
+          <Fragment>
+            <Navbar />
+            <div className='container'>
+              <AlertState>
                 <Alerts />
                 <Switch>
                   <PrivateRoute exact path='/' component={Home} />
@@ -49,10 +49,10 @@ const App = () => {
                   <Route exact path='/register' component={Register} />
                   <Route exact path='/login' component={Login} />
                 </Switch>
-              </div>
-            </Fragment>
-          </Router>
-        </AlertState>
+              </AlertState>
+            </div>
+          </Fragment>
+        </Router>
       </ContactState>
     </AuthState>
   )
